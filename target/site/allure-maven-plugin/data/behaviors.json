@@ -1,0 +1,57 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "TC01_Dang_Ki_Account",
+    "uid" : "87f35e0c4fdb7401",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1669652340357,
+      "stop" : 1669652354358,
+      "duration" : 14001
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "TC02_Dang_Nhap",
+    "uid" : "32f86d5cd41929e1",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1669652354812,
+      "stop" : 1669652364907,
+      "duration" : 10095
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "TC03_New_Customer",
+    "uid" : "fef94fb3cb507609",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1669652364935,
+      "stop" : 1669652377669,
+      "duration" : 12734
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "TC04_Edit_Customer",
+    "uid" : "4141c5d6a9a79bf1",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1669652388509,
+      "stop" : 1669652423145,
+      "duration" : 34636
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ]
+}

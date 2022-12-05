@@ -1,0 +1,80 @@
+{
+  "a37d7fa0e0fc047549994bd30eea504e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "32f86d5cd41929e1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669652354812,
+        "stop" : 1669652364907,
+        "duration" : 10095
+      }
+    } ]
+  },
+  "bb05e5667569f04204c07265b120f36b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4141c5d6a9a79bf1",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for visibility of element located by By.xpath: //textarea[@name='addr'] (tried for 30 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1669652388509,
+        "stop" : 1669652423145,
+        "duration" : 34636
+      }
+    } ]
+  },
+  "1de4caf82eb0e380ad6fd9296025eb28" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "87f35e0c4fdb7401",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669652340357,
+        "stop" : 1669652354358,
+        "duration" : 14001
+      }
+    } ]
+  },
+  "eba75c2f6d3af2b9a3cf9c72bf18182c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fef94fb3cb507609",
+      "status" : "failed",
+      "statusDetails" : "expected [MÃª Linh HÃ  Ná»™i] but found [MÃª Linh HÃ  Ná»™i]",
+      "time" : {
+        "start" : 1669652364935,
+        "stop" : 1669652377669,
+        "duration" : 12734
+      }
+    } ]
+  }
+}

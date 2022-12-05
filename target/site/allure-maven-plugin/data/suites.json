@@ -1,0 +1,73 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Demo Guru",
+    "children" : [ {
+      "name" : "Test Login 1",
+      "children" : [ {
+        "name" : "com.training.demo.feature.AddNewCustomer.AddNewCustomerTest",
+        "children" : [ {
+          "name" : "TC01_Dang_Ki_Account",
+          "uid" : "87f35e0c4fdb7401",
+          "parentUid" : "13ece2214cb8cbb2887b51a599a9e3f2",
+          "status" : "passed",
+          "time" : {
+            "start" : 1669652340357,
+            "stop" : 1669652354358,
+            "duration" : 14001
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "TC02_Dang_Nhap",
+          "uid" : "32f86d5cd41929e1",
+          "parentUid" : "13ece2214cb8cbb2887b51a599a9e3f2",
+          "status" : "passed",
+          "time" : {
+            "start" : 1669652354812,
+            "stop" : 1669652364907,
+            "duration" : 10095
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "TC03_New_Customer",
+          "uid" : "fef94fb3cb507609",
+          "parentUid" : "13ece2214cb8cbb2887b51a599a9e3f2",
+          "status" : "failed",
+          "time" : {
+            "start" : 1669652364935,
+            "stop" : 1669652377669,
+            "duration" : 12734
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "13ece2214cb8cbb2887b51a599a9e3f2"
+      }, {
+        "name" : "com.training.demo.feature.EditCustomer.EditCustomerTest",
+        "children" : [ {
+          "name" : "TC04_Edit_Customer",
+          "uid" : "4141c5d6a9a79bf1",
+          "parentUid" : "f4c1c95c3d9024b14c4f578681b78e68",
+          "status" : "broken",
+          "time" : {
+            "start" : 1669652388509,
+            "stop" : 1669652423145,
+            "duration" : 34636
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "f4c1c95c3d9024b14c4f578681b78e68"
+      } ],
+      "uid" : "9d048f3ba3de0b527035fc0ba16e0dd0"
+    } ],
+    "uid" : "719e746d2fa9ec2319091b5d5405940b"
+  } ]
+}

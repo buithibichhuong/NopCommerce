@@ -1,0 +1,65 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-FPR4FSK",
+    "children" : [ {
+      "name" : "17284@DESKTOP-FPR4FSK.main(1)",
+      "children" : [ {
+        "name" : "TC02_Dang_Nhap",
+        "uid" : "32f86d5cd41929e1",
+        "parentUid" : "6c47c365b4d1dc340f10f05eb07c37e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1669652354812,
+          "stop" : 1669652364907,
+          "duration" : 10095
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC03_New_Customer",
+        "uid" : "fef94fb3cb507609",
+        "parentUid" : "6c47c365b4d1dc340f10f05eb07c37e8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1669652364935,
+          "stop" : 1669652377669,
+          "duration" : 12734
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC01_Dang_Ki_Account",
+        "uid" : "87f35e0c4fdb7401",
+        "parentUid" : "6c47c365b4d1dc340f10f05eb07c37e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1669652340357,
+          "stop" : 1669652354358,
+          "duration" : 14001
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC04_Edit_Customer",
+        "uid" : "4141c5d6a9a79bf1",
+        "parentUid" : "6c47c365b4d1dc340f10f05eb07c37e8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1669652388509,
+          "stop" : 1669652423145,
+          "duration" : 34636
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6c47c365b4d1dc340f10f05eb07c37e8"
+    } ],
+    "uid" : "ef5bd086b66f5586628881249e6716b5"
+  } ]
+}

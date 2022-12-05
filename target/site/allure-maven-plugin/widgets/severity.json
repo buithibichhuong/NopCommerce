@@ -1,0 +1,41 @@
+[ {
+  "uid" : "32f86d5cd41929e1",
+  "name" : "TC02_Dang_Nhap",
+  "time" : {
+    "start" : 1669652354812,
+    "stop" : 1669652364907,
+    "duration" : 10095
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fef94fb3cb507609",
+  "name" : "TC03_New_Customer",
+  "time" : {
+    "start" : 1669652364935,
+    "stop" : 1669652377669,
+    "duration" : 12734
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "87f35e0c4fdb7401",
+  "name" : "TC01_Dang_Ki_Account",
+  "time" : {
+    "start" : 1669652340357,
+    "stop" : 1669652354358,
+    "duration" : 14001
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4141c5d6a9a79bf1",
+  "name" : "TC04_Edit_Customer",
+  "time" : {
+    "start" : 1669652388509,
+    "stop" : 1669652423145,
+    "duration" : 34636
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

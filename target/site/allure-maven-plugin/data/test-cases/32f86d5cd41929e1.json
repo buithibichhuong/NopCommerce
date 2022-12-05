@@ -1,0 +1,78 @@
+{
+  "uid" : "32f86d5cd41929e1",
+  "name" : "TC02_Dang_Nhap",
+  "fullName" : "com.training.demo.feature.AddNewCustomer.AddNewCustomerTest.TC02_Dang_Nhap",
+  "historyId" : "a37d7fa0e0fc047549994bd30eea504e",
+  "time" : {
+    "start" : 1669652354812,
+    "stop" : 1669652364907,
+    "duration" : 10095
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1669652303399,
+      "stop" : 1669652338289,
+      "duration" : 34890
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.training.demo.feature.AddNewCustomer.AddNewCustomerTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.training.demo.feature.AddNewCustomer.AddNewCustomerTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "TC02_Dang_Nhap"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Demo Guru"
+  }, {
+    "name" : "suite",
+    "value" : "Test Login 1"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.training.demo.feature.AddNewCustomer.AddNewCustomerTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-FPR4FSK"
+  }, {
+    "name" : "thread",
+    "value" : "17284@DESKTOP-FPR4FSK.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "32f86d5cd41929e1.json",
+  "parameterValues" : [ ]
+}

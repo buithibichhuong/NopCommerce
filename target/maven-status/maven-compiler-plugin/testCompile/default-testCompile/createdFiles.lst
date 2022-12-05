@@ -1,0 +1,6 @@
+com\training\demo\feature\DeleteCutomer\DeleteCustomerTest.class
+com\training\demo\feature\login\LoginTest.class
+com\training\demo\feature\login\testData.class
+com\training\demo\feature\register\RegisterTest.class
+com\training\demo\feature\AddNewCustomer\AddNewCustomerTest.class
+com\training\demo\feature\EditCustomer\EditCustomerTest.class

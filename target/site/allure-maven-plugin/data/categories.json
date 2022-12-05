@@ -1,0 +1,47 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected [MÃª Linh HÃ  Ná»™i] but found [MÃª Linh HÃ  Ná»™i]",
+      "children" : [ {
+        "name" : "TC03_New_Customer",
+        "uid" : "fef94fb3cb507609",
+        "parentUid" : "96f608ffe39cea31adf9aff0a2e3d9cf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1669652364935,
+          "stop" : 1669652377669,
+          "duration" : 12734
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "96f608ffe39cea31adf9aff0a2e3d9cf"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Expected condition failed: waiting for visibility of element located by By.xpath: //textarea[@name='addr'] (tried for 30 second(s) with 500 milliseconds interval)",
+      "children" : [ {
+        "name" : "TC04_Edit_Customer",
+        "uid" : "4141c5d6a9a79bf1",
+        "parentUid" : "b5df3bd92f22a7429d1352d079206498",
+        "status" : "broken",
+        "time" : {
+          "start" : 1669652388509,
+          "stop" : 1669652423145,
+          "duration" : 34636
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b5df3bd92f22a7429d1352d079206498"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

@@ -18,103 +18,60 @@ public class RegisterPageOjbect extends BasePage {
         clickToElement(driver, RegisterPageUI.REGISTER_BUTTON);
     }
 
-    public void inputToDateOfBirthTextbox(String dateOfBirth) {
-        waitForElementVisible(driver, RegisterPageUI.DATEOFBIRTH_TEXTBOX);
-        removeAttributeInDOM(driver, RegisterPageUI.DATEOFBIRTH_TEXTBOX,"type");
-        sendKeyToElement(driver, RegisterPageUI.DATEOFBIRTH_TEXTBOX, dateOfBirth);
+    public void inputToFirstNameTextbox(String firstName) {
+        Log.info("Input to first name " + firstName);
+        waitForElementVisible(driver, RegisterPageUI.FIRST_NAME_TEXTBOX);
+        sendKeyToElement(driver, RegisterPageUI.FIRST_NAME_TEXTBOX, firstName);
     }
-
-    public void inputToAddressTextbox(String address) {
-        waitForElementVisible(driver, RegisterPageUI.ADDRESS_TEXTBOX);
-        sendKeyToElement(driver, RegisterPageUI.ADDRESS_TEXTBOX, address);
+    public void inputToLastNameTextbox(String lastName) {
+        Log.info("Input to last name " + lastName);
+        waitForElementVisible(driver, RegisterPageUI.LAST_NAME_TEXTBOX);
+        sendKeyToElement(driver, RegisterPageUI.LAST_NAME_TEXTBOX, lastName);
     }
-
-    public void inputToCityTextbox(String city) {
-        waitForElementVisible(driver, RegisterPageUI.CITY_TEXTBOX);
-        sendKeyToElement(driver, RegisterPageUI.CITY_TEXTBOX, city);
-    }
-
-    public void inputToStateTextbox(String state) {
-        waitForElementVisible(driver, RegisterPageUI.STATE_TEXTBOX);
-        sendKeyToElement(driver, RegisterPageUI.STATE_TEXTBOX, state);
-    }
-
-    public void inputToPinTextbox(String pin) {
-        waitForElementVisible(driver, RegisterPageUI.PIN_TEXTBOX);
-        sendKeyToElement(driver, RegisterPageUI.PIN_TEXTBOX, pin);
-    }
-
-    public void inputToPhoneTextbox(String phone) {
-        waitForElementVisible(driver, RegisterPageUI.PHONE_TEXTBOX);
-        sendKeyToElement(driver, RegisterPageUI.PHONE_TEXTBOX, phone);
-    }
-
     public void inputToEmailTextbox(String email) {
+        Log.info("Input to email " + email);
         waitForElementVisible(driver, RegisterPageUI.EMAIL_TEXTBOX);
         sendKeyToElement(driver, RegisterPageUI.EMAIL_TEXTBOX, email);
     }
-
     public void inputToPasswordTextbox(String password) {
-        waitForElementVisible(driver, RegisterPageUI.PASSWORD_TEXTBOX);
-        sendKeyToElement(driver, RegisterPageUI.PASSWORD_TEXTBOX, password);
+        Log.info("Input to password " + password);
+        waitForElementVisible(driver, RegisterPageUI.FIRST_NAME_TEXTBOX);
+        sendKeyToElement(driver, RegisterPageUI.FIRST_NAME_TEXTBOX, password);
+    }
+    public void inputToComfirmPasswordTextbox(String comfirmPassword) {
+        Log.info("Input to comfirm password " + comfirmPassword);
+        waitForElementVisible(driver, RegisterPageUI.FIRST_NAME_TEXTBOX);
+        sendKeyToElement(driver, RegisterPageUI.FIRST_NAME_TEXTBOX, comfirmPassword);
     }
 
-    public void clickToSubmitButton() {
-        waitForElementClickable(driver, RegisterPageUI.SUBMIT_BUTTON);
-        clickToElement(driver, RegisterPageUI.SUBMIT_BUTTON);
+    public String getMessageErrorFirstName() {
+        Log.info("first name message error");
+        waitForElementVisible(driver, RegisterPageUI.FIRST_NAME_MESSAGE_ERROR);
+        return getTextElement(driver, RegisterPageUI.FIRST_NAME_MESSAGE_ERROR);
     }
-
-    public String getTextHeading3() {
-        waitForElementVisible(driver, RegisterPageUI.HEADING3_LABEL);
-        return getTextElement(driver, RegisterPageUI.HEADING3_LABEL);
+    public String getMessageErrorLastName() {
+        Log.info("flast name message error");
+        waitForElementVisible(driver, RegisterPageUI.LAST_NAME_MESSAGE_ERROR);
+        return getTextElement(driver, RegisterPageUI.LAST_NAME_MESSAGE_ERROR);
     }
-
-    public String getTextNameLabel() {
-        waitForElementVisible(driver, RegisterPageUI.NAME_LABEL);
-        return getTextElement(driver, RegisterPageUI.NAME_LABEL);
+    public String getMessageErrorEmail() {
+        Log.info("Email message error");
+        waitForElementVisible(driver, RegisterPageUI.EMAIL_MESSAGE_ERROR);
+        return getTextElement(driver, RegisterPageUI.EMAIL_MESSAGE_ERROR);
     }
-
-    public String getTextGenderLabel() {
-        waitForElementVisible(driver, RegisterPageUI.GENDER_LABEL);
-        return getTextElement(driver, RegisterPageUI.GENDER_LABEL);
+    public String getMessageErrorPassword() {
+        Log.info("Password message error");
+        waitForElementVisible(driver, RegisterPageUI.PASSWORD_MESSAGE_ERROR);
+        return getTextElement(driver, RegisterPageUI.PASSWORD_MESSAGE_ERROR);
     }
-
-    public String getTextBirthDayLabel() {
-        waitForElementVisible(driver, RegisterPageUI.BIRTHDAY_LABEL);
-        return getTextElement(driver, RegisterPageUI.BIRTHDAY_LABEL);
+    public String getMessageErrorComfirmPassword() {
+        Log.info("Comfirm password message error");
+        waitForElementVisible(driver, RegisterPageUI.COMFIRM_PASSWORD_MESSAGE_ERROR);
+        return getTextElement(driver, RegisterPageUI.COMFIRM_PASSWORD_MESSAGE_ERROR);
     }
-
-    public String getTextAddressLabel() {
-        waitForElementVisible(driver, RegisterPageUI.ADDRESS_LABEL);
-        return getTextElement(driver, RegisterPageUI.ADDRESS_LABEL);
-    }
-
-    public String getTextCityLabel() {
-        waitForElementVisible(driver, RegisterPageUI.CITY_LABEL);
-        return getTextElement(driver, RegisterPageUI.CITY_LABEL);
-    }
-
-    public String getTextStateLabel() {
-        waitForElementVisible(driver, RegisterPageUI.STATE_LABEL);
-        return getTextElement(driver, RegisterPageUI.STATE_LABEL);
-    }
-
-    public String getTextPinLabel() {
-        waitForElementVisible(driver, RegisterPageUI.PIN_LABEL);
-        return getTextElement(driver, RegisterPageUI.PIN_LABEL);
-    }
-
-    public String getTextPhoneLabel() {
-        waitForElementVisible(driver, RegisterPageUI.PHONE_LABEL);
-        return getTextElement(driver, RegisterPageUI.PHONE_LABEL);
-    }
-
-    public String getTextEmailLabel() {
-        waitForElementVisible(driver, RegisterPageUI.EMAIL_LABEL);
-        return getTextElement(driver, RegisterPageUI.EMAIL_LABEL);
-    }
-    public String getTextCustomerID() {
-        waitForElementVisible(driver, RegisterPageUI.CUSTOMER_ID_LABLE);
-        return getTextElement(driver, RegisterPageUI.CUSTOMER_ID_LABLE);
+    public String getMessageRegisterSuccess(){
+        Log.info("Comfirm register success");
+        waitForElementVisible(driver, RegisterPageUI.REGISTER_SUCCESS);
+        return getTextElement(driver, RegisterPageUI.REGISTER_SUCCESS);
     }
 }

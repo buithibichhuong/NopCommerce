@@ -7,8 +7,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import java.util.Random;
 
@@ -42,7 +44,6 @@ public class RegisterTest {
     public void TC01_Register_Empty_Data(){
         managerHomePage.clickToRegisterLink();
         registerPage.clickRegisterButton();
-
         Assert.assertEquals(registerPage.getMessageErrorFirstName(), "First name is required.");
         Assert.assertEquals(registerPage.getMessageErrorLastName(), "Last name is required.");
         Assert.assertEquals(registerPage.getMessageErrorEmail(), "Email is required.");
@@ -75,23 +76,26 @@ public class RegisterTest {
     }
     @Test
     public void TC04_Register_Email_Exist(){
+        managerHomePage.clickToLogOutLink();
         managerHomePage.clickToRegisterLink();
         registerPage.inputToFirstNameTextbox(firstName);
         registerPage.inputToLastNameTextbox(lastName);
         registerPage.inputToEmailTextbox(emailExist);
+        registerPage.inputToPasswordTextbox(password);
+        registerPage.inputToComfirmPasswordTextbox(comfirmPassword);
         registerPage.clickRegisterButton();
 
         Assert.assertEquals(registerPage.getMessageEmailExist(),"The specified email already exists");
     }
     @Test
     public void TC05_Register_Password_Invalid(){
+        driver.get("https://demo.nopcommerce.com/");
         managerHomePage.clickToRegisterLink();
         registerPage.inputToFirstNameTextbox(firstName);
         registerPage.inputToLastNameTextbox(lastName);
         registerPage.inputToEmailTextbox(email);
         registerPage.inputToPasswordTextbox(passwordInvalid);
         registerPage.clickRegisterButton();
-
         Assert.assertEquals(registerPage.getMessageErrorPassword(),"Password must meet the following rules:\n" +
                 "\n" +
                 "must have at least 6 characters");
@@ -108,11 +112,14 @@ public class RegisterTest {
 
         Assert.assertEquals(registerPage.getMessageErrorComfirmPassword(),"The password and confirmation password do not match.");
     }
+
     private int randomNumber() {
         Random ran = new Random();
         return ran.nextInt(999);
     }
+    @AfterTest
     public void After(){
+
         driver.quit();
     }
 }

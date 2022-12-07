@@ -17,4 +17,9 @@ public class ManagerHomePageOjbect extends BasePage {
         clickToElement(driver, ManagerHomePageUI.REGISTER_LINK);
     }
 
+    public void clickToLogOutLink() {
+        Log.info("Click to logout link");
+        waitForElementClickable(driver, ManagerHomePageUI.LOGOUT_LINK);
+        clickToElement(driver, ManagerHomePageUI.LOGOUT_LINK);
+    }
 }

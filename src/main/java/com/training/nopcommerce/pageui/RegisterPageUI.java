@@ -15,6 +15,6 @@ public class RegisterPageUI {
     public static final String EMAIL_TEXTBOX = xpath("//input[@id='Email']");
     public static final String PASSWORD_TEXTBOX = xpath("//input[@id='Password']");
     public static final String COMFIRM_PASSWORD_TEXTBOX = xpath("//input[@id='ConfirmPassword']");
-    public static final String MESSAGE_EMAIL_EXIST = xpath("//li[text()='The specified email already exists']");
+    public static final String MESSAGE_EMAIL_EXIST = xpath("//div[@class='message-error validation-summary-errors']");
     public static final String MESSAGE_REGISTER_SUCCESS =xpath("//div[@class='result']");
 }

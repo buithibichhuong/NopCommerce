@@ -35,13 +35,13 @@ public class RegisterPageOjbect extends BasePage {
     }
     public void inputToPasswordTextbox(String password) {
         Log.info("Input to password " + password);
-        waitForElementVisible(driver, RegisterPageUI.FIRST_NAME_TEXTBOX);
-        sendKeyToElement(driver, RegisterPageUI.FIRST_NAME_TEXTBOX, password);
+        waitForElementVisible(driver, RegisterPageUI.PASSWORD_TEXTBOX);
+        sendKeyToElement(driver, RegisterPageUI.PASSWORD_TEXTBOX, password);
     }
     public void inputToComfirmPasswordTextbox(String comfirmPassword) {
         Log.info("Input to comfirm password " + comfirmPassword);
-        waitForElementVisible(driver, RegisterPageUI.FIRST_NAME_TEXTBOX);
-        sendKeyToElement(driver, RegisterPageUI.FIRST_NAME_TEXTBOX, comfirmPassword);
+        waitForElementVisible(driver, RegisterPageUI.COMFIRM_PASSWORD_TEXTBOX);
+        sendKeyToElement(driver, RegisterPageUI.COMFIRM_PASSWORD_TEXTBOX, comfirmPassword);
     }
 
     public String getMessageErrorFirstName() {
@@ -71,7 +71,12 @@ public class RegisterPageOjbect extends BasePage {
     }
     public String getMessageRegisterSuccess(){
         Log.info("Comfirm register success");
-        waitForElementVisible(driver, RegisterPageUI.REGISTER_SUCCESS);
-        return getTextElement(driver, RegisterPageUI.REGISTER_SUCCESS);
+        waitForElementVisible(driver, RegisterPageUI.MESSAGE_REGISTER_SUCCESS);
+        return getTextElement(driver, RegisterPageUI.MESSAGE_REGISTER_SUCCESS);
+    }
+    public String getMessageEmailExist(){
+        Log.info("get message email exist");
+        waitForElementVisible(driver, RegisterPageUI.MESSAGE_EMAIL_EXIST);
+        return getTextElement(driver, RegisterPageUI.MESSAGE_EMAIL_EXIST);
     }
 }

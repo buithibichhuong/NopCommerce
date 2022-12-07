@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Nop Commerce">
     <test name="Test">
-        <parameter name="browser" value="chrome"/>
+
         <classes>
             <class name="com.training.nopcommerce.feature.Register.RegisterTest"/>
         </classes>

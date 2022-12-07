@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import java.util.Random;
 
@@ -28,6 +29,7 @@ public class RegisterTest {
         comfirmPassword ="12345678";
         passwordInvalid="123";
         comfirmPasswordInvalid="123456";
+
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -36,6 +38,7 @@ public class RegisterTest {
         managerHomePage = PageGenerator.getManagerPage(driver);
         registerPage = PageGenerator.getRegisterPage(driver);
     }
+    @Test
     public void TC01_Register_Empty_Data(){
         managerHomePage.clickToRegisterLink();
         registerPage.clickRegisterButton();
@@ -46,6 +49,7 @@ public class RegisterTest {
         Assert.assertEquals(registerPage.getMessageErrorPassword(), "Password is required.");
         Assert.assertEquals(registerPage.getMessageErrorComfirmPassword(), "Password is required.");
     }
+    @Test
     public void TC02_Register_Wrong_Email(){
         managerHomePage.clickToRegisterLink();
         registerPage.inputToFirstNameTextbox(firstName);
@@ -55,8 +59,9 @@ public class RegisterTest {
         registerPage.inputToComfirmPasswordTextbox(comfirmPassword);
         registerPage.clickRegisterButton();
 
-        Assert.assertEquals(registerPage.getMessageErrorEmail(),"Wrong email");
+        Assert.assertEquals(registerPage.getMessageErrorEmail(),"Wrong email");// dùng hard
     }
+    @Test
     public void TC03_Register_Success(){
         managerHomePage.clickToRegisterLink();
         registerPage.inputToFirstNameTextbox(firstName);
@@ -68,6 +73,7 @@ public class RegisterTest {
 
         Assert.assertEquals(registerPage.getMessageRegisterSuccess(),"Your registration completed");
     }
+    @Test
     public void TC04_Register_Email_Exist(){
         managerHomePage.clickToRegisterLink();
         registerPage.inputToFirstNameTextbox(firstName);
@@ -75,8 +81,9 @@ public class RegisterTest {
         registerPage.inputToEmailTextbox(emailExist);
         registerPage.clickRegisterButton();
 
-        Assert.assertEquals(registerPage.getMessageErrorEmail(),"The specified email already exists");
+        Assert.assertEquals(registerPage.getMessageEmailExist(),"The specified email already exists");
     }
+    @Test
     public void TC05_Register_Password_Invalid(){
         managerHomePage.clickToRegisterLink();
         registerPage.inputToFirstNameTextbox(firstName);
@@ -89,6 +96,7 @@ public class RegisterTest {
                 "\n" +
                 "must have at least 6 characters");
     }
+    @Test
     public void TC06_Register_Comfirm_Password_Invalid(){
         managerHomePage.clickToRegisterLink();
         registerPage.inputToFirstNameTextbox(firstName);
